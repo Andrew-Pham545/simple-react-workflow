@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
   push:
 jobs:
+  BUILD_JOB:
   runs-on: ubuntu-22.04
   steps:
     - name: getting code
