@@ -4,17 +4,17 @@ on:
   push:
 jobs:
   BUILD_JOB:
-  runs-on: ubuntu-22.04
-  steps:
-    - name: getting code
-      uses: actions/checkout@v3
-    - name: install NodeJS
-      uses: actions/setup-node@v3
-      with: 
-        node-version: 18 
-    - name: install dependencies
-      run: npm ci
-    - name: running test
-      run: npm test
+    runs-on: ubuntu-22.04
+    steps:
+      - name: getting code
+        uses: actions/checkout@v3
+      - name: install NodeJS
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 18 
+      - name: install dependencies
+        run: npm ci
+      - name: running test
+        run: npm test
 
 
